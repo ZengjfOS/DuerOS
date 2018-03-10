@@ -2,6 +2,17 @@
 
 https://github.com/dueros/bot-sdk
 
+## 操作流程：
+
+* `apt-get install composer curl jq`
+* `mkdir ~/bae && cd ~/bae` 
+* `git push https://git.duapp.com/appid4kc9afss60 master`
+* `cd vendor/dueros/bot-sdk/samples/personal_income_tax/` 
+* `vim start.sh          # 修改port`
+* `vim post-part.sh      # 修改和上面一样的port`
+* `chmod +x ./start.sh && ./start.sh`
+* `chmod +x ./post-part.sh && ./post-part.sh part/launch.php | jq`
+
 ## PHP Notice: Undefined index: xxx
 
 ### Notice跟踪
@@ -210,12 +221,43 @@ https://github.com/dueros/bot-sdk
 * 到这里基本上确定不是软件运行问题，基本上将问题集中在：`xargs: curl: No such file or directory`，需要安装`curl`：`apt-get install curl`；
 * 运行结果如下：
   ```
-  root@localhost:~/zengjf/bae/vendor/dueros/bot-sdk/samples/personal_income_tax# ./post-part.sh part/launch.php 
-  PHP Notice:  Undefined index: request in /root/zengjf/bae/vendor/dueros/bot-sdk/tools/genUsData.php on line 106
-  PHP Notice:  Undefined index: query in /root/zengjf/bae/vendor/dueros/bot-sdk/tools/genUsData.php on line 110
-  PHP Notice:  Undefined index: bot_name in /root/zengjf/bae/vendor/dueros/bot-sdk/tools/genUsData.php on line 114
-  PHP Notice:  Undefined index: intent in /root/zengjf/bae/vendor/dueros/bot-sdk/tools/genUsData.php on line 118
-  PHP Notice:  Undefined index: session in /root/zengjf/bae/vendor/dueros/bot-sdk/tools/genUsData.php on line 142
-  {"version":"2.0","context":{},"session":{"attributes":{}},"response":{"directives":[],"shouldEndSession":false,"card":{"type":"list","list":[{"title":"title","content":"content","url":"http:\/\/www","image":"http:\/\/www.png"}]},"resource":null,"outputSpeech":{"type":"PlainText","text":"鎵€寰楃◣涓烘偍鏈嶅姟"},"reprompt":null}}root@localhost:~/zengjf/bae/vendor/dueros/bot-sdk/samples/personal_income_tax# 
+  root@localhost:~/zengjf/vendor/dueros/bot-sdk/samples/personal_income_tax# ./post-part.sh part/launch.php  | jq
+  PHP Notice:  Undefined index: request in /root/zengjf/vendor/dueros/bot-sdk/tools/genUsData.php on line 106
+  PHP Notice:  Undefined index: query in /root/zengjf/vendor/dueros/bot-sdk/tools/genUsData.php on line 110
+  PHP Notice:  Undefined index: bot_name in /root/zengjf/vendor/dueros/bot-sdk/tools/genUsData.php on line 114
+  PHP Notice:  Undefined index: intent in /root/zengjf/vendor/dueros/bot-sdk/tools/genUsData.php on line 118
+  PHP Notice:  Undefined index: session in /root/zengjf/vendor/dueros/bot-sdk/tools/genUsData.php on line 142
+    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                   Dload  Upload   Total   Spent    Left  Speed
+  100   521    0   329  100   192   218k   127k --:--:-- --:--:-- --:--:--  321k
+  {
+    "version": "2.0",
+    "context": {},
+    "session": {
+      "attributes": {}
+    },
+    "response": {
+      "directives": [],
+      "shouldEndSession": false,
+      "card": {
+        "type": "list",
+        "list": [
+          {
+            "title": "title",
+            "content": "content",
+            "url": "http://www",
+            "image": "http://www.png"
+          }
+        ]
+      },
+      "resource": null,
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "鎵€寰楃◣涓烘偍鏈嶅姟"
+      },
+      "reprompt": null
+    }
+  }
+  root@localhost:~/zengjf/vendor/dueros/bot-sdk/samples/personal_income_tax#
   ```
 
