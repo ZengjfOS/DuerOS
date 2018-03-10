@@ -6,7 +6,9 @@ https://github.com/dueros/bot-sdk
 
 * `apt-get install composer curl jq`
 * `mkdir ~/bae && cd ~/bae` 
-* `git push https://git.duapp.com/appid4kc9afss60 master`
+* `git init`
+* `git pull https://git.duapp.com/appid4kc9afss60 master`
+* `composer require dueros/bot-sdk`
 * `cd vendor/dueros/bot-sdk/samples/personal_income_tax/` 
 * `vim start.sh          # 修改port`
 * `vim post-part.sh      # 修改和上面一样的port`
