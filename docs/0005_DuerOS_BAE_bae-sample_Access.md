@@ -3,7 +3,7 @@
 * [SDK常用功能介绍](https://dueros.baidu.com/didp/doc/dueros-bot-platform/dbp-sdk/Common_Functions_php_markdown)
 
 最主要的是理解下面这一段的意思：  
-```
+```PHP
 $this->addIntentHandler('tax', function(){
 ...
 })
@@ -13,7 +13,7 @@ $this->addIntentHandler('tax', function(){
 
 ## base-sample 修改之后内容如下
 
-```
+```PHP
 bae@baeapp-ck97fv1ae9by:~/app/src$ pwd
 /home/bae/app/src
 bae@baeapp-ck97fv1ae9by:~/app/src$ cat Bot.php 
