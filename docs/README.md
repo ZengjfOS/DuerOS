@@ -2,6 +2,7 @@
 
 ## Docs
 
+* [0008_DuerOS_BAE_IoT_Test.md](0008_DuerOS_BAE_IoT_Test.md)
 * [0007_DuerOS_BAE_Oauth.md](0007_DuerOS_BAE_Oauth.md)
 * [0006_DuerOS_BAE_Deploy.md](0006_DuerOS_BAE_Deploy.md)
 * [0005_DuerOS_BAE_bae-sample_Access.md](0005_DuerOS_BAE_bae-sample_Access.md)
