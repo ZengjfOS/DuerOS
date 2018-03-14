@@ -1,6 +1,6 @@
 # DuerOS BAE IoT Test
 
-* 目前部署的是：https://github.com/dueros/bot-sdk/tree/master/samples/thirdparty_nlu_self；
+* 目前部署的是：https://github.com/dueros/bot-sdk/tree/master/samples/thirdparty_nlu_self
 * 部署的项目目前是不对的，主要只是提供一个环境，用于测试，这里面有Log模块，可以用于做一些验证；
 
 ## index.php
