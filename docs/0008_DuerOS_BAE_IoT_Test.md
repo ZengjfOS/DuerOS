@@ -65,13 +65,12 @@ class Bot extends Baidu\Duer\Botsdk\Bot{
 
         //test fatal log，你可以这样来输出一个fatal日志
         //$this->log->fatal("this is a fatal log");
-        $json_post = json_decode($postData, true);;
+        $json_post = json_decode($postData, true);
 
         //log 一个字段
         $this->log->setField('postData', $postData);
         $this->log->setField('postDatatype', gettype($postData));
         $this->log->setField('json_posttype', gettype($json_post));
-        $this->log->setField('json_postHeader', $json_post["header"]);
         $this->log->setField('json_postHeader', $json_post["header"]["name"]);
         $this->log->setField('query', $this->request->getQuery());
         $this->log->setField('session.status', $this->getSessionAttribute('status'));
