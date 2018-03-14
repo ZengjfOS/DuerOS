@@ -9,7 +9,7 @@
 
 ## Source Code
 
-```
+```PHP
 bae@baeapp-y55mj6m99yfy:~/app$ cat index.php 
 <?php
     ini_set('display_errors', 1);
