@@ -1,0 +1,136 @@
+[
+    {
+        "name": "mcfish/libmqtt",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/McFizh/libMQTT.git",
+            "reference": "3a7552e335028684fd0f59e4df9944bf4bd97291"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/McFizh/libMQTT/zipball/3a7552e335028684fd0f59e4df9944bf4bd97291",
+            "reference": "3a7552e335028684fd0f59e4df9944bf4bd97291",
+            "shasum": ""
+        },
+        "time": "2018-01-25 20:13:09",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "LibMQTT\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pekka Harjamäki",
+                "email": "mcfizh@gmail.com"
+            }
+        ],
+        "description": "MQTT 3.1.1 library for PHP with TLS support",
+        "keywords": [
+            "mqtt",
+            "php"
+        ]
+    },
+    {
+        "name": "monitor/bot-monitor",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://gitlab.com/tianyi17/BotMonitor.git",
+            "reference": "43bb09c2b7316f785bb080ee64f56fae6427cf0e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://gitlab.com/api/v4/projects/tianyi17%2FBotMonitor/repository/archive.zip?sha=43bb09c2b7316f785bb080ee64f56fae6427cf0e",
+            "reference": "43bb09c2b7316f785bb080ee64f56fae6427cf0e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2017-11-15 21:59:07",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Baidu\\Apm\\BotMonitorsdk\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "liudesheng",
+                "email": "liudesheng01@baidu.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "bot监控的PHP SDK",
+        "keywords": [
+            "bot",
+            "monitor"
+        ]
+    },
+    {
+        "name": "dueros/bot-sdk",
+        "version": "v2.1.9",
+        "version_normalized": "2.1.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dueros/bot-sdk.git",
+            "reference": "11f11299771d2c9c04f77243377fdb1f1dd3bb76"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dueros/bot-sdk/zipball/11f11299771d2c9c04f77243377fdb1f1dd3bb76",
+            "reference": "11f11299771d2c9c04f77243377fdb1f1dd3bb76",
+            "shasum": ""
+        },
+        "require": {
+            "monitor/bot-monitor": "^1.4",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.3"
+        },
+        "time": "2018-03-08 12:14:49",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Baidu\\Duer\\Botsdk\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "wangpeng",
+                "email": "wangpeng20@baidu.com",
+                "role": "Developer"
+            },
+            {
+                "name": "yuanpeng",
+                "email": "yuanpeng01@baidu.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "度秘bot开发的PHP SDK",
+        "keywords": [
+            "bot",
+            "duer"
+        ]
+    }
+]

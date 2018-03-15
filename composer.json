@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mcfish/libmqtt": "^1.0",
+        "dueros/bot-sdk": "^2.1"
+    }
+}

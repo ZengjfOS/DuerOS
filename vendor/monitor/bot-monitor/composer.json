@@ -1,0 +1,20 @@
+{
+    "name": "monitor/bot-monitor",                             
+    "type": "library" ,
+    "description": "bot监控的PHP SDK",
+    "keywords": ["bot","monitor"],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name" : "liudesheng",
+            "email": "liudesheng01@baidu.com",
+            "role":"Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Baidu\\Apm\\BotMonitorsdk\\": "src/" }
+    }
+}
