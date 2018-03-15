@@ -2,6 +2,7 @@
 
 ## Docs
 
+* [0011_DuerOS_personal_income_tax_Hacking.md](0011_DuerOS_personal_income_tax_Hacking.md)
 * [0010_DuerOS_BAE_MQTT.md](0010_DuerOS_BAE_MQTT.md)
 * [0009_DuerOS_BAE_SmartHome_Demo.md](0009_DuerOS_BAE_SmartHome_Demo.md)
 * [0008_DuerOS_BAE_IoT_Test.md](0008_DuerOS_BAE_IoT_Test.md)
