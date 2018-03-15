@@ -5,6 +5,7 @@
   * 加载`Bot.php`；
   * 设置PHP返回数据类型；
   * 记录程序处理时间；
+  * 将程序运行过程中的Log日志保存到日志文件中；
 * `Bot.php`负责处理具体的事务；
   * 设置Log日志级别，存放位置；
   * 设置启动、关闭监听；
@@ -48,7 +49,7 @@ $ret = $tax->run();                                                 // 目前对
 $tax->log->markEnd('all_t');
 //打印日志
 //or 在register_shutdown_function增加一个执行函数
-$tax->log->notice($tax->log->getField('url_t'));
+$tax->log->notice($tax->log->getField('url_t'));        // 将程序运行过程中记录的数据写入日志文件中
 $tax->log->notice();
 print $ret;
 ```
@@ -111,7 +112,7 @@ class Bot extends \Baidu\Duer\Botsdk\Bot {
         ]);
         // 记录这次请求的query
         $this->log->setField('query', $this->request->getQuery());
-        //$this->addIntercept(new \Baidu\Duer\Botsdk\Plugins\DuerSessionIntercept());
+        //$this->addIntercept(new \Baidu\Duer\Botsdk\Plugins\DuerSessionIntercept());   // 不使用拦截器
         // 添加打开程序运行的监听处理函数
         $this->addLaunchHandler(function(){
             $card = new ListCard();
