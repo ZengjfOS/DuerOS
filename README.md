@@ -4,6 +4,10 @@
 * [开发者平台](https://dueros.baidu.com/open)
 * [官方视频](https://dueros.baidu.com/didp/news/technicalclass)
 
+## Demo Show
+
+![./docs/image/WebColor.gif](./docs/image/WebColor.gif)
+
 ## Docs
 
 [分析、操作文档](./docs/README.md)
