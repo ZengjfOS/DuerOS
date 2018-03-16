@@ -1,6 +1,7 @@
 {
     "require": {
         "mcfish/libmqtt": "^1.0",
-        "dueros/bot-sdk": "^2.1"
+        "dueros/bot-sdk": "^2.1",
+        "stichoza/google-translate-php": "^3.2"
     }
 }
