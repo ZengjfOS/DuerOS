@@ -2,7 +2,7 @@
 
 用了一下百度翻译绝望了，直接放弃，换成Google翻译，发现BAE PRO安装的PHP版本低了，之前一直用PHP 5.4版本进行测试、分析，但是目前Google翻译的库要使用PHP 5.5以上版本；
 
-## 百度翻译就是一个笑话
+## 百度翻译跟我讲了一个笑话
 
 ![./image/Baidu_Translate_Error.png](./image/Baidu_Translate_Error.png)
 
