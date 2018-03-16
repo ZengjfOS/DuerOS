@@ -28,14 +28,7 @@
         function onConnect() {
           // Once a connection has been made, make a subscription and send a message.
           console.log("onConnect");
-          client.subscribe("test-iot-service");
-        }
-
-        // called when the client connects
-        function onConnect() {
-          // Once a connection has been made, make a subscription and send a message.
-          console.log("onConnect");
-          client.subscribe("test-iot-service");
+          client.subscribe("test-iot-sub");
         }
 
         // called when the client connects
@@ -55,7 +48,17 @@
         function onMessageArrived(message) {
           console.log("onMessageArrived:"+message.payloadString);
           json_data = JSON.parse(message.payloadString);
-          document.getElementById("body_color").style.background = json_data["color"];
+
+          seven_color_en = ["red", "green", "blue", "yellow", "black", "white", "purple"];
+          seven_color_zh = ["ºì", "Âɫ", "6ɫ", "»Æ«", "ºÚ«", "°×«", "×ɫ"];
+
+          for (var index = 0; index < seven_color_zh.length; index++) {
+            console.log(seven_color_zh[index]);
+            if (seven_color_zh[index] == json_data["color"]) {
+              document.getElementById("body_color").style.background = seven_color_en[index];
+              break;
+            }
+          }
         }
  
         console.log("MQTT Client Set Over, Wait Data Tranfer.")
