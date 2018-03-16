@@ -94,7 +94,7 @@ https://github.com/ZengjfOS/DuerOS/tree/WebColor
 ## Bot source code
 
 * index.php
-  ```
+  ```PHP
   <?php
   ini_set('display_errors', 1);
   error_reporting(~0);
@@ -112,7 +112,7 @@ https://github.com/ZengjfOS/DuerOS/tree/WebColor
   ?>
   ```
 * Bot.php
-  ```
+  ```PHP
   <?php
   /**
    * @desc 
