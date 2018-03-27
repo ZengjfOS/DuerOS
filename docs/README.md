@@ -2,6 +2,7 @@
 
 ## Docs
 
+* [0015 dcs-sdk-java Code Hacking](./0015_dcs-sdk-java_Code_Hacking/README.md)
 * [0014_DuerOS_Translate.md](0014_DuerOS_Translate.md)
 * [0013_DuerOS_IoTHub_WebColor.md](./0013_DuerOS_IoTHub_WebColor.md)
 * [0012_DuerOS_Understand_SDK_API.md](0012_DuerOS_Understand_SDK_API.md)
